@@ -1,0 +1,21 @@
+//namespace stringlar_bilan_ishlash1
+//{
+//    internal class Program
+//    { 
+      //1
+//        static void Main(string[] args)
+//        {
+//            Console.Write("Enter name :");
+//            var text = Console.ReadLine();
+//            var result = HelloName(text);
+//            Console.WriteLine($"Result : {result}");
+//        }
+
+//        public static string HelloName(string name)
+//        {
+//            var response = $"Hello {name}";
+//            return response;
+//        }
+
+//    }
+//}
