@@ -1,0 +1,518 @@
+namespace Array_va_Listlar__bilan_ishlash
+{
+
+    internal class Program
+    {
+        static void Main(string[] texts)
+        {
+            1 task.N ta elementdan iborat 1 o‘lchamli list berilgan.
+        3 xonali elementlarini miqdorini toping.
+
+        Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+
+            var numbers = new List<int>();
+
+            //FillList
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i} : ");
+                var element = int.Parse(Console.ReadLine());
+                numbers.Add(element);
+            }
+            // LOGIC
+            var counter = 0;
+            foreach (var element in numbers)
+            {
+                if (100 <= element && element <= 999)
+                {
+                    ++counter;
+                }
+            }
+            Console.WriteLine($"Result : {counter} ta bor");
+
+            2 task.N ta elementdan iborat 1 o‘lchamli list berilgan.
+        Juft elementlarini miqdorini toping.
+
+        Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+
+            var numbers = new List<int>();
+
+            //FillList
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i} : ");
+                var element = int.Parse(Console.ReadLine());
+                numbers.Add(element);
+            }
+            // LOGIC
+            var counter = 0;
+            foreach (var element in numbers)
+            {
+                if (element % 2 == 0)
+                {
+                    ++counter;
+                }
+            }
+            Console.WriteLine($"Result : {counter} ta bor");
+
+            3 task.N ta elementdan iborat 1 o‘lchamli list berilgan.
+        Toq elementlarini yig‘indisini toping.
+
+
+        Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+
+            var numbers = new List<int>();
+
+            //FillList
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i} : ");
+                var element = int.Parse(Console.ReadLine());
+                numbers.Add(element);
+            }
+            // LOGIC
+            var summary = 0;
+            foreach (var element in numbers)
+            {
+                if (element % 2 != 0)
+                {
+                    summary += element;
+                }
+            }
+            Console.WriteLine($"Result : {summary} ");
+
+            4 task.
+        N ta elementdan iborat 1 o‘lchamli list berilgan.
+        3 ga va 7 ga karrali elementlarini miqdorini toping.
+        Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+
+            var numbers = new List<int>();
+
+            //FillList
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i} : ");
+                var element = int.Parse(Console.ReadLine());
+                numbers.Add(element);
+            }
+            // LOGIC
+            var counter = 0;
+            foreach (var element in numbers)
+            {
+                if (element % 3 == 0 && element % 7 == 0)
+                {
+                    ++counter;
+                }
+            }
+            Console.WriteLine($"Result : {counter} ta bor ");
+
+            5 task.N ta elementdan iborat 1 o‘lchamli list berilgan.
+        2 xonali toq elementlarini miqdorini va yig‘indisini toping.
+
+        Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+
+            var numbers = new List<int>();
+
+            //FillList
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i} : ");
+                var element = int.Parse(Console.ReadLine());
+                numbers.Add(element);
+            }
+            // LOGIC
+            var summary = 0;
+            var counter = 0;
+            foreach (var element in numbers)
+            {
+                if (element % 2 != 0 && 10 <= element && element <= 99)
+                {
+                    summary += element;
+                    ++counter;
+                }
+            }
+            Console.WriteLine($"Counter : {counter} ");
+            Console.WriteLine($"Summary : {summary} ");
+
+            6 task.N ta elementdan iborat 1 o‘lchamli list berilgan.
+        1 chi va oxirgi elementlarini almashtiring va ekranga listni chiqaring.
+
+
+        static void Main(string[] args)
+            {
+                Console.Write("Enter length : ");
+                var length = int.Parse(Console.ReadLine());
+                var numberList = GenerateNumberList(length);
+
+                SwapFirstAndLastElement(numberList);
+                DisplayNumberList(numberList);
+            }
+        //FillList
+        public static List<int> GenerateNumberList(int length)
+        {
+            var numberList = new List<int>();
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i}: ");
+                var number = int.Parse(Console.ReadLine());
+                numberList.Add(number);
+            }
+            return numberList;
+        }
+        public static void SwapFirstAndLastElement(List<int> numbers)
+        {
+            if (numbers.Count > 1)
+            {
+                var temp = numbers[0];
+                numbers[0] = numbers[numbers.Count - 1];
+                numbers[numbers.Count - 1] = temp;
+            }
+
+        }
+        public static void DisplayNumberList(List<int> numbers)
+        {
+            foreach (var number in numbers)
+            {
+                Console.Write($"{number} ");
+            }
+            Console.WriteLine();
+        }
+
+        7 task.N ta elementdan iborat 1 o‘lchamli list berilgan.Dastlabki 3 ta elementini yig‘indisini toping.
+
+        static void Main(string[] args)
+        {
+            Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+            var numberList = GenerateNumberList(length);
+
+            FirstThreeElementCount(numberList);
+            DisplayNumberList(numberList);
+        }
+        //FillList
+        public static List<int> GenerateNumberList(int length)
+        {
+            var numberList = new List<int>();
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i}: ");
+                var number = int.Parse(Console.ReadLine());
+                numberList.Add(number);
+            }
+            return numberList;
+        }
+        public static void FirstThreeElementCount(List<int> numbers)
+        {
+            var threesumm = 0;
+            for (var i = 0; i < 3; i++)
+            {
+                threesumm += numbers[i];
+            }
+            Console.WriteLine($"Result : {threesumm}");
+        }
+        public static void DisplayNumberList(List<int> numbers)
+        {
+            foreach (var number in numbers)
+            {
+                Console.Write($" {number} ");
+            }
+            Console.WriteLine();
+        }
+
+        8 task.N ta elementdan iborat 1 o‘lchamli list berilgan.Oxirgi 3 ta elementini yig‘indisi toping.
+
+        static void Main(string[] args)
+        {
+            Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+            var numberList = GenerateNumberList(length);
+
+            LastThreeElementCount(numberList);
+            DisplayNumberList(numberList);
+        }
+        //FillList
+        public static List<int> GenerateNumberList(int length)
+        {
+            var numberList = new List<int>();
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i}: ");
+                var number = int.Parse(Console.ReadLine());
+                numberList.Add(number);
+            }
+            return numberList;
+        }
+        public static void LastThreeElementCount(List<int> numbers)
+        {
+            var threesumm = 0;
+            for (var i = numbers.Count - 1; i > numbers.Count - 4; i--)
+            {
+                threesumm += numbers[i];
+            }
+            Console.WriteLine($"Result : {threesumm}");
+        }
+        public static void DisplayNumberList(List<int> numbers)
+        {
+            foreach (var number in numbers)
+            {
+                Console.Write($" {number} ");
+            }
+            Console.WriteLine();
+        }
+
+        9 task.N ta elementdan iborat 1 o‘lchamli list berilgan.Toq elementlar bn Juft elementlarini taqqoslang.
+        Agar toqlari ko‘p bo‘lsa true aks holda false chiqaring.
+
+        static void Main(string[] args)
+        {
+            Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+            var numberList = GenerateNumberList(length);
+
+            ComparisoinEvenAndOdd(numberList);
+            DisplayNumberList(numberList);
+        }
+        //FillList
+        public static List<int> GenerateNumberList(int length)
+        {
+            var numberList = new List<int>();
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i}: ");
+                var number = int.Parse(Console.ReadLine());
+                numberList.Add(number);
+            }
+            return numberList;
+        }
+        public static void ComparisoinEvenAndOdd(List<int> numbers)
+        {
+            var even = 0;
+            var odd = 0;
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    ++even;
+                }
+                if (numbers[i] % 2 != 0)
+                {
+                    odd++;
+                }
+            }
+            if (even < odd)
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
+
+
+        }
+        public static void DisplayNumberList(List<int> numbers)
+        {
+            foreach (var number in numbers)
+            {
+                Console.Write($" {number} ");
+            }
+            Console.WriteLine();
+        }
+
+        10 task.N ta elementdan iborat 1 o‘lchamli list berilgan.Juft elementlarini 3 barobarga oshiring.
+
+        static void Main(string[] args)
+        {
+            Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+            var numberList = GenerateNumberList(length);
+
+            IncreaseEven(numberList);
+            DisplayNumberList(numberList);
+        }
+        //FillList
+        public static List<int> GenerateNumberList(int length)
+        {
+            var numberList = new List<int>();
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i}: ");
+                var number = int.Parse(Console.ReadLine());
+                numberList.Add(number);
+            }
+            return numberList;
+        }
+        public static void IncreaseEven(List<int> numbers)
+        {
+
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    numbers[i] = numbers[i] * 3;
+
+                }
+            }
+        }
+        public static void DisplayNumberList(List<int> numbers)
+        {
+            foreach (var number in numbers)
+            {
+                Console.Write($" {number} ");
+            }
+            Console.WriteLine();
+        }
+
+         11 task.N ta elementdan iborat 1 o‘lchamli list berilgan.
+         Agar hamma elementi 5 ga karrali bo‘lsa true aks holda false chiqaring.
+
+        static void Main(string[] args)
+        {
+            Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+            var numberList = GenerateNumberList(length);
+
+            AllElementsMultipleOfFive(numberList);
+            DisplayNumberList(numberList);
+        }
+        //FillList
+        public static List<int> GenerateNumberList(int length)
+        {
+            var numberList = new List<int>();
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i}: ");
+                var number = int.Parse(Console.ReadLine());
+                numberList.Add(number);
+            }
+            return numberList;
+        }
+        public static void AllElementsMultipleOfFive(List<int> numbers)
+        {
+            bool AllElements = true;
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] % 5 != 0)
+                {
+                    AllElements = true;
+                    break;
+
+                }
+            }
+            Console.WriteLine(AllElements);
+        }
+        public static void DisplayNumberList(List<int> numbers)
+        {
+            foreach (var number in numbers)
+            {
+                Console.Write($" {number} ");
+            }
+            Console.WriteLine();
+        }
+
+        12 Task.N ta elementdan iborat 1 o‘lchamli list berilgan.
+        Agar dastlabki 3 ta elementi 2 xonali bo‘lsa true aks holda false chiqaring.
+
+        static void Main(string[] args)
+        {
+            Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+            var numberList = GenerateNumberList(length);
+
+            FirstThreeOnes(numberList);
+            DisplayNumberList(numberList);
+        }
+        //FillList
+        public static List<int> GenerateNumberList(int length)
+        {
+            var numberList = new List<int>();
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i}: ");
+                var number = int.Parse(Console.ReadLine());
+                numberList.Add(number);
+            }
+            return numberList;
+        }
+        public static void FirstThreeOnes(List<int> numbers)
+        {
+            bool FirstThree = true;
+            if (numbers.Count < 3)
+            {
+                FirstThree = false;
+            }
+            for (var i = 0; i < 3; i++)
+            {
+                if (10 >= numbers[i] && numbers[i] <= 99)
+                {
+                    FirstThree = false;
+                    break;
+
+                }
+            }
+            Console.WriteLine(FirstThree);
+        }
+        public static void DisplayNumberList(List<int> numbers)
+        {
+            foreach (var number in numbers)
+            {
+                Console.Write($" {number} ");
+            }
+            Console.WriteLine();
+        }
+
+        13 task.N ta elementdan iborat 1 o‘lchamli list berilgan.
+        Agar dastlabki 2 ta elementni juft va oxirgi 2 ta elementi toq bo‘lsa true aks holda false chiqaring
+
+        static void Main(string[] args)
+        {
+            Console.Write("Enter length : ");
+            var length = int.Parse(Console.ReadLine());
+            var numberList = GenerateNumberList(length);
+
+            FirstTwoAndLastTwoEven(numberList);
+            DisplayNumberList(numberList);
+        }
+        //FillList
+        public static List<int> GenerateNumberList(int length)
+        {
+            var numberList = new List<int>();
+            for (var i = 0; i < length; i++)
+            {
+                Console.Write($"{i}: ");
+                var number = int.Parse(Console.ReadLine());
+                numberList.Add(number);
+            }
+            return numberList;
+        }
+        public static void FirstTwoAndLastTwoEven(List<int> numbers)
+        {
+            if (numbers.Count < 4)
+            {
+                Console.WriteLine(false);
+                return;
+            }
+            var firstTwoEven = numbers[0] % 2 == 0 && numbers[1] % 2 == 0;
+            var lastTwoOdd = numbers[numbers.Count - 1] % 2 != 0 && numbers[numbers.Count - 2] % 2 != 0;
+
+            Console.WriteLine(firstTwoEven && lastTwoOdd);
+
+        }
+
+        public static void DisplayNumberList(List<int> numbers)
+        {
+            foreach (var number in numbers)
+            {
+                Console.Write($" {number} ");
+            }
+            Console.WriteLine();
+        }
+
+    }
+}
+
