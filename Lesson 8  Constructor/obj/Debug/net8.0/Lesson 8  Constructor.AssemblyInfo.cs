@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lesson 8  Constructor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad6c5b5f0bbe95cebaf2d26e4075202d71ab83e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a0bc913fb2a67a422d216a5e5de350db3b697e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lesson 8  Constructor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lesson 8  Constructor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
