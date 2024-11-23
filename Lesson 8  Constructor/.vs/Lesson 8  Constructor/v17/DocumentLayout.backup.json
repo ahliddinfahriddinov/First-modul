@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Project\\FirstModul\\Lesson 8  Constructor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|c:\\project\\firstmodul\\lesson 8  constructor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|c:\\project\\firstmodul\\lesson 8  constructor\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|solutionrelative:models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|c:\\project\\firstmodul\\lesson 8  constructor\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|solutionrelative:services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|c:\\project\\firstmodul\\lesson 8  constructor\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|solutionrelative:services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|c:\\project\\firstmodul\\lesson 8  constructor\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|solutionrelative:services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|c:\\project\\firstmodul\\lesson 8  constructor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|c:\\project\\firstmodul\\lesson 8  constructor\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|solutionrelative:models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B8C16DB9-A52A-417F-BA81-F172CCCA8356}|Lesson 8  Constructor.csproj|c:\\project\\firstmodul\\lesson 8  constructor\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,16 +38,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CarService.cs",
               "DocumentMoniker": "C:\\Project\\FirstModul\\Lesson 8  Constructor\\Services\\CarService.cs",
               "RelativeDocumentMoniker": "Services\\CarService.cs",
-              "ToolTip": "C:\\Project\\FirstModul\\Lesson 8  Constructor\\Services\\CarService.cs*",
-              "RelativeToolTip": "Services\\CarService.cs*",
+              "ToolTip": "C:\\Project\\FirstModul\\Lesson 8  Constructor\\Services\\CarService.cs",
+              "RelativeToolTip": "Services\\CarService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T19:56:16.91Z",
@@ -55,12 +55,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Car.cs",
               "DocumentMoniker": "C:\\Project\\FirstModul\\Lesson 8  Constructor\\Models\\Car.cs",
               "RelativeDocumentMoniker": "Models\\Car.cs",
-              "ToolTip": "C:\\Project\\FirstModul\\Lesson 8  Constructor\\Models\\Car.cs*",
-              "RelativeToolTip": "Models\\Car.cs*",
+              "ToolTip": "C:\\Project\\FirstModul\\Lesson 8  Constructor\\Models\\Car.cs",
+              "RelativeToolTip": "Models\\Car.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T19:53:26.874Z",
@@ -68,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "BookService.cs",
               "DocumentMoniker": "C:\\Project\\FirstModul\\Lesson 8  Constructor\\Services\\BookService.cs",
               "RelativeDocumentMoniker": "Services\\BookService.cs",
@@ -81,13 +81,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Project\\FirstModul\\Lesson 8  Constructor\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Project\\FirstModul\\Lesson 8  Constructor\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAuwMQAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Project\\FirstModul\\Lesson 8  Constructor\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAkwHEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T16:40:42.361Z",
               "EditorCaption": ""
