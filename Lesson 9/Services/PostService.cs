@@ -119,4 +119,43 @@ public class PostService
         }
         return resultComments;
     }
+    public bool AddCommentToPost(Guid postId, string comment)
+    {
+        var post = GetById(postId);
+        if (post == null)
+        {
+            return false;
+        }
+
+        post.Comments.Add(comment);
+
+        return true;
+
+    }
+
+    public bool AddViewerNameToPost(Guid postId, string viewerName)
+    {
+        var post = GetById(postId);
+        if (post == null)
+        {
+            return false;
+        }
+
+        post.Comments.Add(viewerName);
+
+        return true;
+    }
+
+    public bool AddLikeToPost(Guid postId)
+    {
+        var post = GetById(postId);
+        if (post == null)
+        {
+            return false;
+        }
+
+        post.QuantityLikes++;
+
+        return true;
+    }
 }
